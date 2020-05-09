@@ -9,17 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      uses: actions/checkout@v2
       with:
         persist-credentials: false
-    - name: Install and Build
-      run: |
-        yarn add vuepress -D
-        yarn install
-        yarn run build
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
+
+    - name: Build and Deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: master
-        FOLDER: docs/.vuepress/dist
+        TARGET_REPO: jenkey2011/vuepress-deploy-demo-target
+        TARGET_BRANCH: master
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: docs/.vuepress/dist/

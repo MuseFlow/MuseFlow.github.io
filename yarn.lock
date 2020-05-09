@@ -14,11 +14,6 @@
   dependencies:
     medium-zoom "^1.0.4"
 
-"@vuepress/plugin-search@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.4.1.tgz#5842f7ef0214c8f9f3cafa6ca2f4648f8dbc03d2"
-  integrity sha512-J4JyXD6M1oOU013s4ZLKMkKEGd7qEtSIsAw2nZY2mckZ7ETX49R5Pv2S5uCqLRQfUQSIGR5TEABL22q0B8uCVA==
-
 medium-zoom@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.5.tgz#81413dda20ccdd857141ff420cfab788dd32e20e"
