@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Jerry xu",
-  "license": "MIC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.4.1",
     "@vuepress/plugin-medium-zoom": "^1.4.1"
