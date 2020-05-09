@@ -14,6 +14,7 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
+        yarn add vuepress -D
         yarn install
         yarn run build
     - name: Deploy
