@@ -5,7 +5,7 @@ module.exports = [
     },
     {
       text: '五线谱',
-      link: '/zh/staves/index.html'
+      link: '/zh/staves/'
     },
     {
       text: '乐谱',
@@ -37,7 +37,7 @@ module.exports = [
     },
     {
       text: '更新记录',
-      link: '/zh/log/index.html'
+      link: '/zh/log/'
     },
     {
       text: 'FAQ',

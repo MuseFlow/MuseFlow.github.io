@@ -190,7 +190,7 @@ function getGuitarSidebar (categoryA, categoryB, categoryC, categoryD, categoryE
       title: categoryC,
       collapsable: true,
       children: [
-        'classic'
+        // 
       ]
     },
     {

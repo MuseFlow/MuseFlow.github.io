@@ -5,7 +5,7 @@ module.exports = [
   },
   {
     text: 'Staves',
-    link: '/staves/index.html'
+    link: '/staves/'
   },
   {
     text: 'Music',
@@ -37,11 +37,11 @@ module.exports = [
   },
   {
     text: 'Change',
-    link: '/log/index.html'
+    link: '/log/'
   },
   {
     text: 'FAQ',
-    link: '/issues/index.html'
+    link: '/issues/'
   },
   {
     text: 'Github',
