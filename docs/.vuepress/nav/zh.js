@@ -5,7 +5,7 @@ module.exports = [
     },
     {
       text: '五线谱',
-      link: '/zh/staves/'
+      link: '/zh/notation/'
     },
     {
       text: '乐谱',

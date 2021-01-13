@@ -4,8 +4,8 @@ module.exports = [
     link: '/'
   },
   {
-    text: 'Staves',
-    link: '/staves/'
+    text: 'Notation',
+    link: '/notation/'
   },
   {
     text: 'Music',

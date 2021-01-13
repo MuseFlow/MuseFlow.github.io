@@ -54,9 +54,9 @@ module.exports = ctx =>  ({
               lastUpdated: 'Last Updated',
               nav: require('./nav/en'),
               sidebar: {
-                '/staves/': getStavesSidebar('Guide', 'Advanced'),
-                '/piano/': getPianoSidebar('🎹', '🎹Pop', '🎹Classic', '🎹Recommend', '🎹Other'),
-                '/guitar/': getGuitarSidebar('🎸', '🎸Pop','🎸Classic','🎸Recommend','🎸Other'),
+                '/notation/': getNotationSidebar('Guide', 'Advanced'),
+                '/piano/': getPianoSidebar('🎹  Overview', '🎹  Pop', '🎹  Classic', '🎹  Recommend', '🎹  Other'),
+                '/guitar/': getGuitarSidebar('🎸  Overview', '🎸  Pop','🎸  Classic','🎸  Recommend','🎸  Other'),
                 '/issues/': getIssuesSidebar(),
                 '/log/': getLogSidebar()
               }
@@ -69,9 +69,9 @@ module.exports = ctx =>  ({
               lastUpdated: '上次更新',
               nav: require('./nav/zh'),
               sidebar: {
-                '/zh/staves/': getStavesSidebar('指南', '深入'),
-                '/zh/piano/': getPianoSidebar('🎹', '🎹热门', '🎹经典', '🎹推荐', '🎹其他'),
-                '/zh/guitar/': getGuitarSidebar('🎸', '🎸热门', '🎸经典', '🎸推荐', '🎸其他'),
+                '/zh/notation/': getNotationSidebar('指南', '深入'),
+                '/zh/piano/': getPianoSidebar('🎹  概览', '🎹  热门', '🎹  经典', '🎹  推荐', '🎹  其他'),
+                '/zh/guitar/': getGuitarSidebar('🎸  概览', '🎸  热门', '🎸  经典', '🎸  推荐', '🎸  其他'),
                 '/zh/issues/': getIssuesSidebar(),
                 '/zh/log/': getLogSidebar()
               }
@@ -111,7 +111,7 @@ function getLogSidebar () {
   ]
 }
 
-function getStavesSidebar (groupA, groupB) {
+function getNotationSidebar (groupA, groupB) {
   return [
     {
       title: groupA,

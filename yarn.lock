@@ -14,7 +14,34 @@
   dependencies:
     medium-zoom "^1.0.4"
 
+abcjs@5.10.3:
+  version "5.10.3"
+  resolved "https://registry.yarnpkg.com/abcjs/-/abcjs-5.10.3.tgz#294702140ec1caa292859ba9d2af0452f7e9e046"
+  integrity sha512-YGmW4CUWd7T2/HqZa/SQOTE+lXg7Z68HwwpJhHJBvdHqLi1uLCiYva1ZRGhB/MPyl1QKqJMfF+LQ1jGAEK69XQ==
+  dependencies:
+    midi "https://github.com/paulrosen/MIDI.js.git#abcjs"
+
+abcjs@5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/abcjs/-/abcjs-5.11.0.tgz#397592ea6a56948aee64a8364f9a7a589e254300"
+  integrity sha512-kLehHwwttcTCVhKQaDkmqYbWBLAWmfyzYSbUQoEDAOTOX5RzDGakX8tXpzlsNHw6Lh8W8odZw44e0siwbG4TKA==
+  dependencies:
+    abcjs "5.10.3"
+    midi "https://github.com/paulrosen/MIDI.js.git#abcjs"
+
+abcjs@^5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/abcjs/-/abcjs-5.12.0.tgz#06fec076d570821309b0a12598cd356cd589eb08"
+  integrity sha512-pvi7SjOAKT7cRyRtywUSwYB0SNtRHKLxZUZ9Oc4E+nvpBHr8Z2/M9Pfyv3oIaiEpxlWTFK+B/H5t/DckiNFgpg==
+  dependencies:
+    abcjs "5.11.0"
+    midi "https://github.com/paulrosen/MIDI.js.git#abcjs"
+
 medium-zoom@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.5.tgz#81413dda20ccdd857141ff420cfab788dd32e20e"
   integrity sha512-aLGa6WlTuFKWvH88bqTrY5ztJMN+D0hd8UX6BYc4YSoPayppzETjZUcdVcksgaoQEMg4cZSmXPg846fTp2rjRQ==
+
+"midi@https://github.com/paulrosen/MIDI.js.git#abcjs":
+  version "0.4.2"
+  resolved "https://github.com/paulrosen/MIDI.js.git#e593ffef81a0350f99448e3ab8111957145ff6b2"

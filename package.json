@@ -14,5 +14,8 @@
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.4.1",
     "@vuepress/plugin-medium-zoom": "^1.4.1"
+  },
+  "dependencies": {
+    "abcjs": "^5.12.0"
   }
 }
