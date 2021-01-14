@@ -1,0 +1,16 @@
+{
+    "name": "MuseFlow",
+    "short_name": "MuseFlow",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "Feeling, the power of music",
+    "theme_color": "#49b1f5",
+    "icons": [
+      {
+        "src": "./music.svg",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ]
+}
