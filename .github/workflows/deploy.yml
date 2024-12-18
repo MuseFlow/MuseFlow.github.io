@@ -1,0 +1,58 @@
+# https://cn.vitejs.dev/guide/static-deploy.html#github-pages
+# https://github.com/maomao1996/vitepress-nav-template/blob/main/.github/workflows/deploy.yml
+name: GitHub Actions Build and Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    # Triggered only when the following paths change
+    paths:
+      - 'docs/**'
+      - 'package.json'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+env:
+  TZ: Asia/Shanghai
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Build
+        run: pnpm docs:build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          full_commit_message: Deploying to gh-pages from @ ${{ github.sha }} 🚀
+          publish_branch: gh-pages
+          publish_dir: dist
