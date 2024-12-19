@@ -47,16 +47,19 @@ jobs:
           cache: 'pnpm'
 
       - name: Build
-        run: |
-          pnpm docs:build
-          ls -la .vitepress/dist
+        run: pnpm docs:build
 
+      - name: Check build path
+        run: |
+          pwd
+          ls -la
+          ls -la docs
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: '.vitepress/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
