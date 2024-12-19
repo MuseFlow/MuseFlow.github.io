@@ -25,8 +25,9 @@ pnpm update --latest
 > Learning reference documents
 
 1. [VitePress official 🇺🇸](https://vitepress.dev), [VitePress official 🇨🇳](https://vitepress.dev/zh), [VitePress official 🇨🇳](https://cn.vitejs.dev/guide)
-2. [茂茂物语](https://notes.fe-mm.com)
-3. [ForDocs](https://tsinghua-lau.github.io/forDocs/vitepressCn)
+2. [UnoCSS](https://unocss.dev)
+3. [茂茂物语](https://notes.fe-mm.com)
+4. [ForDocs](https://tsinghua-lau.github.io/forDocs/vitepressCn)
 
 ## Thanks
 
