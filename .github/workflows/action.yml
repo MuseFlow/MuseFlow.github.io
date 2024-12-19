@@ -52,14 +52,13 @@ jobs:
       - name: Check build path
         run: |
           pwd
-          ls -la
-          ls -la docs
+          ls -la docs/vitepress
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.vitepress/dist'
+          path: 'docs/.vitepress/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
