@@ -52,7 +52,7 @@ jobs:
       - name: Check build path
         run: |
           pwd
-          ls -la docs/vitepress
+          ls -la docs/.vitepress
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
